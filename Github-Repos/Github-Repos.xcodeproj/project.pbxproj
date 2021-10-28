@@ -21,7 +21,6 @@
 		D63211B027283E6C005AD11B /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D63211AB27283E6C005AD11B /* Roboto-BoldItalic.ttf */; };
 		D63211B127283E6C005AD11B /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D63211AC27283E6C005AD11B /* Roboto-Italic.ttf */; };
 		D63211B5272851BB005AD11B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63211B3272851BB005AD11B /* TableViewCell.swift */; };
-		D63211B6272851BB005AD11B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D63211B4272851BB005AD11B /* TableViewCell.xib */; };
 		D6AD293E2729A88C0020E0C1 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AD293D2729A88C0020E0C1 /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +41,6 @@
 		D63211AB27283E6C005AD11B /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BoldItalic.ttf"; path = "../../../../Downloads/roboto/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
 		D63211AC27283E6C005AD11B /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Italic.ttf"; path = "../../../../Downloads/roboto/Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		D63211B3272851BB005AD11B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		D63211B4272851BB005AD11B /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		D6AD293D2729A88C0020E0C1 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +110,6 @@
 			children = (
 				D6321151272816FA005AD11B /* Main.storyboard */,
 				D63211B3272851BB005AD11B /* TableViewCell.swift */,
-				D63211B4272851BB005AD11B /* TableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,7 +195,6 @@
 				D63211AD27283E6C005AD11B /* Roboto-Medium.ttf in Resources */,
 				D6321158272816FA005AD11B /* LaunchScreen.storyboard in Resources */,
 				D63211AE27283E6C005AD11B /* Roboto-Bold.ttf in Resources */,
-				D63211B6272851BB005AD11B /* TableViewCell.xib in Resources */,
 				D6321155272816FA005AD11B /* Assets.xcassets in Resources */,
 				D63211B127283E6C005AD11B /* Roboto-Italic.ttf in Resources */,
 				D63211B027283E6C005AD11B /* Roboto-BoldItalic.ttf in Resources */,

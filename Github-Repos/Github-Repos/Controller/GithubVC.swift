@@ -10,6 +10,10 @@ import UIKit
 class GithubVC: UIViewController{
     
     @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var menuButton: UIButton!
+    @IBOutlet weak var menuView: UIView!
+    @IBOutlet weak var sortByStars: UIButton!
+    @IBOutlet weak var sortByName: UIButton!
     
     var apiService = ApiService()
     var repos: Repo?
@@ -20,9 +24,37 @@ class GithubVC: UIViewController{
         table.dataSource = self
         table.delegate = self
         table.register(UINib(nibName: Constants.cellNibName, bundle: nil), forCellReuseIdentifier: Constants.cellIdentifier)
+        
+        loadMenuView()
         fetchRepos { [weak self] in
             self?.table.reloadData()
         }
+    }
+    
+    @IBAction func menuButtonPressed(_ sender: UIButton) {
+        menuView.isHidden = !menuView.isHidden
+    }
+    
+    @IBAction func starsPressed(_ sender: UIButton) {
+        ans?.sort { (item1: Items, item2: Items) in
+            return (item1.stargazers_count ?? 0) > (item2.stargazers_count ?? 0)
+        }
+        table.reloadData()
+    }
+    
+    @IBAction func namePressed(_ sender: UIButton) {
+        ans?.sort { (item1: Items, item2: Items) in
+            return (item1.name ?? "") < (item2.name ?? "")
+        }
+        table.reloadData()
+    }
+    
+    func loadMenuView() {
+        menuView.isHidden = true
+        menuView.layer.shadowColor = UIColor.black.cgColor
+        menuView.layer.shadowOpacity = 0.5
+        menuView.layer.shadowOffset = .zero
+        menuView.layer.shadowRadius = 4
     }
     
     func fetchRepos(completion: @escaping () -> ()) {
